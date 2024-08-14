@@ -1,5 +1,5 @@
 FROM nvidia/cuda:11.3.1-devel-ubuntu20.04
-
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
 RUN apt-get update && apt-get install wget -yq
 RUN apt-get install build-essential g++ gcc -y
 ENV DEBIAN_FRONTEND noninteractive
